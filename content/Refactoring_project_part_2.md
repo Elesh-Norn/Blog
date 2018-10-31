@@ -36,19 +36,19 @@ an excel file, associate duplicate or triplicates of a same measure to a concent
 calculus and plotting later.
 
 ~~~~
-        for elements in list_of_slices:            
-             x, y , mean = helper.get_means(elements)           
-        	 list_of_x.append(x)
-        	 list_of_y.append(y)
-        	 list_of_superior_y[index].append(y)
-        	 list_of_meanind[index].append(mean)
-        	 index += 1
+for elements in list_of_slices:            
+    x, y , mean = helper.get_means(elements)           
+    list_of_x.append(x)
+    list_of_y.append(y)
+    list_of_superior_y[index].append(y)
+    list_of_meanind[index].append(mean)
+    index += 1
 
-        ax1.plot(list_of_x, list_of_y, 'ko', markersize=5)
+ax1.plot(list_of_x, list_of_y, 'ko', markersize=5)
 ~~~~
 
-With just this modifications, and progressing bit by bit, i was able to reduce more than 500 lines of code and make it
-much more understandable. When this was done, i could have just stopped there but i decided that, if i wanted to make it a bit more clean and
+With just this modifications, and progressing bit by bit, i was able to reduce **more than 500 lines of code and make it
+much more understandable**. When this was done, i could have just stopped there but i decided that, if i wanted to make it a bit more clean and
 easy to maintain/expand, i should use object oriented programming. 
 
 For the abstraction of the problem, i considered that a triplicate of a reading, their means (the x if you plot it), 
@@ -56,7 +56,7 @@ and it's associated concentration (the y) should be only one object. It makes ac
 I tried to keep the logic and the handling of numpy arrays from the original author as close as possible to the initial
 design. (It would have been much easier to dump all files in dataframe, select the data we want and plot them easily).
 
-I created so a new class called "Point", because i'm very imaginative with names.
+I created so a new class called **"Point"**, because i'm very imaginative with names.
 
 ~~~~
 class Point():
@@ -154,7 +154,7 @@ class File_Parser:
             self.list_of_final_point.append(Final_point(dummy_list))
 ~~~~
 
-And now the program is somewhat correct. It can be more easily expanded and corrected upon. 
+And now the program is correct. It can also be more easily expanded and corrected upon. 
 
 And it seem to work : 
 

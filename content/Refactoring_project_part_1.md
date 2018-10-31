@@ -4,15 +4,16 @@ Category: Project
 Tags: Python, Quality Control, Open Source
 
 One of my first coding exercise after having getting introductory certificates in python programmation
-is an open project. Due to work at my lab, i had to set up a quality control scheme on our ELISAs.
-ELISAs is a method to assay proteins. Quickly said, we put some chemicals and our samples in wells, 
+is an open source project. Due to work at my lab, i had to set up a quality control scheme on our ELISAs.
+
+ELISAs is a method to assay proteins. Quickly said, we put some chemicals and samples in wells, 
 and the stronger the coloration is, the higher concentration of said protein is. 
 
-However, we have to carefully check, if our assay don't get wrong at this point or over time. Imagine 
-a product in the kit goes bad, or this day, you made a mistake and put two times more solution! Is your
-sample concentration really low or this test wrong?
+However, we have to carefully check, if our assays don't get wrong at the time of the experiment or 
+overtime. Imagine a product in the kit goes bad, or this day, you made a mistake and put two times 
+more solution! Is your sample concentration really low or this test wrong?
 
-Quality control (QC) is very important and monitors the processes for detection of error. The solution
+Quality control (QC) is very important and monitors the processes for detection of errors. The solution
 we had in the lab was an ugly excel file, updated whenever, with no one really looking at it. After 
 having made a better version of it, i searched if my fellow biologists had made already a handy 
 application to use simply in the lab, that automate graphing, detect errors and throw warning from 
@@ -21,13 +22,11 @@ many files.
 I found quickly one item, a paper from Wetzel HN et al, [*"A novel Python program for implementation of quality
 control in the ELISA"*](https://www.ncbi.nlm.nih.gov/pubmed/28579365). They describe their quality control
 method and objective and states that this program is meant to help laboratories implement good quality control
-methods.
-
-But let's look a bit at their program : 
+methods. 
 
 You can find it on their github at [https://github.com/hanna133/ELISA_QC](https://github.com/hanna133/ELISA_QC). 
 
-The repository is composed of the manual, some test csv file supposed to be actual results from an ELISA, and the
+The repository is composed of the manual, some test csv file (meant to be actual results from an ELISA), and the
 main program called elisaqc.py
 
 It uses Tkinter as GUI and matplotlib for the plot. The program is written in pyhton 2. Having some knowledge,
@@ -77,9 +76,7 @@ for files in glob.glob("*%s.csv"%(userinput1)) :
 		meanind2.append(mean2)
 ~~~~
 
-And this is repeated for the amount of time there is points in the standard curve of the test (8 time there). So yeah, 
-second task was the biggest. 
+And this is repeated for the amount of time there is points in the standard curve of the test (8 time there). 
 
-**Searching what was going on, what was supposed to happen and then refactoring it, little by little.**
-
-End in part two : )  
+The real challenge was searching what was going on, what was supposed to happen and then refactoring it, 
+little by little. Let's see how i tackled that in  [part two]({filename}/Refactoring_project_part_2.md) : )  

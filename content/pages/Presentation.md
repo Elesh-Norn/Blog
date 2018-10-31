@@ -7,11 +7,12 @@ Hello,
 I'm Daphnée PORTHEAULT, a curious and cheerfull PhD Student in biology. 
 
 During the course of my studies, i found myself passionated about data and programming, i've
-passed some certificate, launched several projects and work/read and it's still ongoing. This 
-is something i want to explore profesionnaly, but it's also a hobby.
+passed some certificates, launched several projects i continue to work and read. This 
+is something i want to explore for my career and as a hobby.
 
 You are on my personal blog, in the aim to share my different projects and as a
-technical challenge. You can find my contact and my github at the bottom.
+technical challenge. It's also a mean to get motivated and realise the work done!
+You can find how to contact me at the bottom of this blog.
 
 My main projects at the moment are :
 
