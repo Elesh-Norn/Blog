@@ -5,16 +5,20 @@ Tags: Python, MtG, Magic, Dataviz, Tkinter
 
 ### Hello there!
 
-It's been a while but I didn't abandon this blog. However? I will talk today of an abandoned project of mine and why it still has value for me.
+It's been a while but I didn't abandon this blog. However, I will talk today of an abandoned project of mine and why it still has value for me.
 
 A great way to learn anything is having little projects. It helps confronts your theoretical knowledge to reality and make you resolve problems. 
 As a self-taught hobbyist programmer it's especially important to me, because it's the only form of evaluation I can get. You could conclude that 
 only results matters then, but it's not entirely true.
 
 I started this project last year with some objective in mind: 
+
 * Would contain data visualisation
+
 * Fun
+
 * Learn new things
+
 * Really challenge myself with something outside my comfort zone
 
 ## Chosing a project
