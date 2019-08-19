@@ -70,7 +70,7 @@ class Square:
         self.pos = pos
         self.isbomb = False
         self.isreveal = False
-self.counter = 0
+        self.counter = 0
 ~~~~
 We will construct a grid of those object, with the earlier create_grid().
 
