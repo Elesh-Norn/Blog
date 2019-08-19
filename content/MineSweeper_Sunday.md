@@ -106,7 +106,7 @@ def calculate_adjacent(self, square):
         count = 0
 		adjacent = [(1, 0), (1, 1),(0, 1),(-1, 1),
                    (-1, 0),(-1, -1),(0, -1),(1, -1)]
-        for adj in self.adjacent:
+        for adj in adjacent:
             visiting_height = square.pos[0] + adj[0]
             visiting_width = square.pos[1] + adj[1]
             if (
