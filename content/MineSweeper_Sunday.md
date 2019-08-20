@@ -1,8 +1,7 @@
-Title: Minesweeper Sunday
+Title: How to code a simple Minesweeper game, on a lazy Sunday 
 Date: 2019-08-19
 Category: Project
 Tags: Python, Minesweeper, Game, arcade, tutorial
-# How to code a simple Minesweeper game, on a lazy Sunday 
 
 Recently, I had the opportunity to train and discover various algorithms to improve my Python skills but also programming skills in general.
 After some weeks of training, on a lazy Sunday, I was wondering how easy it would be to code a simple minesweeper game.
