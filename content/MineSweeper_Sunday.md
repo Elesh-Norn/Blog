@@ -1,7 +1,7 @@
 Title: Minesweeper Sunday
 Date: 2019-08-19
 Category: Project
-Tags: Python, Minesweeper, Game, arcade
+Tags: Python, Minesweeper, Game, arcade, tutorial
 
 Recently, I had the opportunity to train and discover various algorithms to improve my python skills but also programming skills in general.
 After some weeks of training, on a lazy Sunday, I was wondering how easy it would be to code a simple minesweeper game.
@@ -147,7 +147,7 @@ A click will be on a case, we can assume the input will be x, y:
 If you click a bomb you lose
 If you click an empty space it reveals that space and the number of bombs around it.
 
-Now, remember in minesweeper, if you click an empty space that doesn’t contain a bomb or a number it would reveal all the squares around it
+Now, remember in minesweeper, if you click an empty space that doesnâ€™t contain a bomb or a number it would reveal all the squares around it
 until next numbers. Such space in our model is a square with a counter = 0. To reveal the spaces around it, we will modify a bit the adjacent function 
 by adding a [breadth first search](https://en.wikipedia.org/wiki/Breadth-first_search).
 
