@@ -2,28 +2,28 @@ Title: Minesweeper Sunday
 Date: 2019-08-19
 Category: Project
 Tags: Python, Minesweeper, Game, arcade, tutorial
+# How to code a simple Minesweeper game, on a lazy Sunday 
 
-Recently, I had the opportunity to train and discover various algorithms to improve my python skills but also programming skills in general.
+Recently, I had the opportunity to train and discover various algorithms to improve my Python skills but also programming skills in general.
 After some weeks of training, on a lazy Sunday, I was wondering how easy it would be to code a simple minesweeper game.
 
-I discovered the [Arcade library](http://arcade.academy/) on a [episode of Talk Python to Me](https://talkpython.fm/episodes/show/223/fun-and-easy-2d-games-with-python) 
-(an excellent podcast about Python) where the creator, Paul Craven, was invited. After quickly looking at it, 
-I was impressed with how simple and clear it was (compared, in my opinion, to Tkinter which I talk about in my previous blog post [here]({filename}/Aborted_project_Magic_App.md) ).
+I discovered the [Arcade library](http://arcade.academy/) on an [episode of Talk Python to Me](https://talkpython.fm/episodes/show/223/fun-and-easy-2d-games-with-python) where the creator, Paul Craven, was invited.
+I was impressed with how simple and clear the library was (compared, in my opinion, to Tkinter which I talk about in my previous blog post [here]({filename}/Aborted_project_Magic_App.md) ).
 
 My objective would be to keep it simple and fast to do, basic OOP programming and use the arcade library.
 
-## Minesweeper: The rules
+## How to play Minesweeper: the rules
 
 Maybe you're not old like me and didn't spend your time on this, despite better games during your childhood. Minesweeper was a
 game on Windows XP (obviously, vastly inferior to Space Cadet, which is the best game ever).
 ![output]({filename}/image/Minesweeper.png)
 
-Minesweeper was played on a grid of various sizes, all greyed at first, containing mines. You'd click on them and BOOM! you'd lost. Despite its
-terrible theme, it was a clever puzzle game, and some numbers would indicate you the numbers of mines in adjacent spaces. The goal of the 
-game was to reveal all space without touching any mines.
+Minesweeper is played on a grid of various sizes, all grey at first, containing mines. You'd click on them and BOOM! you'd lost. Despite its
+terrible theme, it is a clever puzzle game, and colored numbers would indicate you the numbers of mines in adjacent spaces. The goal of the 
+game is to reveal all space without touching any mines.
 
-## Let's start: The Grid'
-The most obvious point to start is to create the grid object. This can be easily done in python by creating a 2D list, a list of list.
+## First step: The Grid
+The most obvious point to start is to create the grid object. This can be easily done in Python by creating a 2D list, i.e. a list of list.
 
 ~~~~
 grid = []
@@ -59,7 +59,7 @@ class Grid:
 I have a cool grid object now, that will handily give me their height and width and the grid itself. But what is Square() in the create_grid function?
 
 ## Second step: The Square
-We must model each square of the grid. It will be simple. A square will be defined by different attributes. 
+We must model each square of the grid. To keep it simple, a square will be defined by different attributes. 
 It has a position, it can contain a bomb, it can be revealed (or not) and if they're not bomb they contain a little number 
 telling how much bombs are near them.
 
@@ -72,12 +72,11 @@ class Square:
         self.isreveal = False
         self.counter = 0
 ~~~~
-We will construct a grid of those object, with the earlier create_grid().
+We will construct a grid of those objects, with the earlier create_grid().
 
-## 3 methods to make the game
+## How to make the game: 3 methods
 
-A minesweeper, wouldn't be a minesweeper without some mines! Let's place them on the grid! Again, the code is super simple.
-
+A minesweeper, wouldn't be a minesweeper without some mines! Let's place them on the grid! 
 ~~~~
 board = Grid(y, x)
 planting_mines = 10
@@ -138,9 +137,9 @@ def print_game_state(board):
 print(line)
 ~~~~
 
-It's better to put everything in a single class. You can find how it looks like on [my Github here](https://github.com/Elesh-Norn/MineSweeper_Sunday/blob/master/main/grid.py)'
+It's better to put everything in a single class. You can find how it looks like on [my Github here](https://github.com/Elesh-Norn/MineSweeper_Sunday/blob/master/main/grid.py)
 
-## Let's CLICK!
+## Final step: click and PLAY!
 The next thing to do, to play minesweeper now that we have a working board is to create a function that handles the click.
 
 A click will be on a case, we can assume the input will be x, y:
@@ -158,7 +157,7 @@ We add the current item in a visited set. It's really important so you don't won
 
 
 If the adjacent cases are 0 too, I add them to the queue to be processed later. When I finish, I remove the item from the queue.
-In python, I use the [dequeu]( https://docs.python.org/2/library/collections.html#collections.deque) object since it allows me to pop the first item of a list in constant time (unlike a normal list).
+In Python, I use the [dequeu]( https://docs.python.org/2/library/collections.html#collections.deque) object since it allows me to pop the first item of a list in constant time (unlike a normal list).
 
 Here is the code, a method of the [Grid object](https://github.com/Elesh-Norn/MineSweeper_Sunday/blob/master/main/grid.py): 
 
@@ -203,6 +202,6 @@ in some minutes.
 ![Arcade Minesweeper]({filename}/image/Minesweeper_arcade.png)
 
 It's still pretty rough, there is no button to reset but a command, the graphics are being drawn slowly and the game doesn't actually stop when you lose, 
-but this is pretty alright for coding with your cereals, on a Sunday morning. Arcade is really easy and fun to use and you can have a satisfying result really quick thanks to their syntax and templates to guide you.
+but this is pretty alright for coding with your cereals, on a Sunday morning. The arcade library is really easy and fun to use and you can have a satisfying result really quick thanks to their syntax and templates to guide you.
 
 You can find the code on my [github here](https://github.com/Elesh-Norn/MineSweeper_Sunday) if you wanna contribute to it and make it a great Minesweeper game ; )!
