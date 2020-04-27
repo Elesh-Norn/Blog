@@ -11,10 +11,12 @@ The aim of this game jam was to use the arcade game framework with Python. I al
 and simple it is, in my [last article]({filename}/MineSweeper_Sunday.md). Loving the framework, being stuck in lockdown, 
 and at the end of a contract, this was the best time for me to join and have fun. 
 
+## Brainstorming
 The theme of this year game jam was "3 of a Kind", a rather obscure theme! I had a project in my head, but it was not 
 fitting the theme at all! The first thing that came to mind with the theme was 
 ["Lost Viking"](https://en.wikipedia.org/wiki/The_Lost_Vikings) an old Blizzard video game, where you control 3 characters,
 with their own power. To be able to progress in the level, you had to use all of the characters. This required some brainstorming.
+
  
 ![Lost Viking is a game where you control 3 characters](https://main.judgehype.com/images/froala/2019/04/1554232974_6.jpg)
 
@@ -33,6 +35,7 @@ I wanted my game to be playable with just one button. One button would control t
 Instead of controlling one character and look after the obstacles, you would control 3 characters, with 3 buttons, 
 on 3 different locations! I had my game idea. 
 
+## First iterations
 Thanks to arcade simple and efficient API, I was able to do a prototype really quickly. A quick and dirty pixel art later, 
 i had a guy running and jumping, with obstacles coming forward.
 
@@ -45,28 +48,35 @@ To do this I only needed a couple of methods!
 (here, my character)and check collision with a list of Sprite (here the floor, the black bar on the screenshot above).
 It handles gravity, and jump mechanics! 90% of the hard work was already done. 
 
- 
+###Parallax
 Then, I needed to give a feeling of movement to my character. He stays standing still after all. One trick I could use 
 was [parallax scrolling effect](https://en.wikipedia.org/wiki/Parallax_scrolling). Basically you have a moving background,
 giving the feeling your character is moving across the scenery. I didn't have time to draw really long background, 
 so I decided to cycle the same background with a little trick. Whenever one copy of the background would quit the screen, 
 I would teleport it at the left, so it can be reused again.
-  
-  ![schema]({filename}/image/GameDev2.png)
+ 
+
+![schema]({filename}/image/GameDev2.png)
   
 
-It was working well, but looking even better when you add two of them, at different distances!
+It was working well with one background, but it's even better two, at different distances!
  
- ![parallax finished]({filename}/image/GameDev3.gif)
- 
+
+![parallax finished]({filename}/image/GameDev3.gif)
+
+
+### Pixel art and animation
 I spent a lot of time creating the background, but it would not be the most difficult task. The most difficult task was
 to draw animation. Pixel art is really difficult despite its apparent simplicity. However, armed with 
 [Pixel Studio](https://store.steampowered.com/app/1204050/Pixel_Studio_for_pixel_art/)
 (free on Steam), their tutorials, and a few pieces of advice from a [friend](https://twitter.com/Fe_nris) way more skilled
 than me, I was able to produce an animation that made me proud! 
  
+
 ![Sprites used for animation]({filename}/image/GameDev4.gif)
 
+
+###Endgame
 During the development of the game, I deviated slightly from my original idea and decided that it would be more akin to 
 a rhythm game, where correct input is determined if you hit them at the right time, shown on the screen as a little window.
 I added code to generate different patterns of notes/obstacles to hit. I kept the jumping to have a little animation of 
@@ -76,6 +86,7 @@ in the gif below.
 
 ![Full Game Gif]({filename}/image/GameDev5.gif)
 
+##Last words and links
 Overall, I really enjoyed this experience. The time and theme constraint surprisingly boost creativity and it was my 
 first attempt at a game jam and pixel art. I enjoyed the most, the iterative content creation, bouncing from idea to idea, 
 adding a frame of animation, a little functionality. Having a deadline forces you to focus on the important thing, and 
@@ -88,6 +99,5 @@ by following the instructions.
 If you wish to see other participants' creations and take over the theme, go check the
 [python discord](https://github.com/python-discord/game-jam-2020) repo! If you wish to join the discord, you can find
 their website [here](https://pythondiscord.com/).
- 
-Arcade site is [here](https://arcade.academy/) and the arcade discord [here](https://discord.gg/fceAXdY). 
--- 
+
+Arcade site is [here](https://arcade.academy/) and the arcade discord [here](https://discord.gg/fceAXdY).
