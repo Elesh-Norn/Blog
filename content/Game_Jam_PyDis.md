@@ -30,7 +30,7 @@ the right time. Below are some example of such games:
 - Google Dino Easter egg ([link](https://www.omgchrome.com/list-google-chrome-easter-eggs/)) 
 
 I wanted my game to be playable with just one button. One button would control the character and it would avoid obstacles.
- Instead of controlling one character and look after the obstacles, you would control 3 characters, with 3 buttons, 
+Instead of controlling one character and look after the obstacles, you would control 3 characters, with 3 buttons, 
 on 3 different locations! I had my game idea. 
 
 Thanks to arcade simple and efficient API, I was able to do a prototype really quickly. A quick and dirty pixel art later, 
@@ -40,27 +40,30 @@ i had a guy running and jumping, with obstacles coming forward.
 
 To do this I only needed a couple of methods!
 
+
 [`arcade.PhysicsEnginePlatformer`](https://arcade.academy/_modules/arcade/physics_engines.html) takes a Sprite, 
- (here, my character)and check collision with a list of Sprite (here the floor, the black bar on the screenshot above).
- It handles gravity, and jump mechanics! 90% of the hard work was already done. 
+(here, my character)and check collision with a list of Sprite (here the floor, the black bar on the screenshot above).
+It handles gravity, and jump mechanics! 90% of the hard work was already done. 
+
  
- Then, I needed to give a feeling of movement to my character. He stays standing still after all. One trick I could use 
+Then, I needed to give a feeling of movement to my character. He stays standing still after all. One trick I could use 
 was [parallax scrolling effect](https://en.wikipedia.org/wiki/Parallax_scrolling). Basically you have a moving background,
-  giving the feeling your character is moving across the scenery. I didn't have time to draw really long background, 
-  so I decided to cycle the same background with a little trick. Whenever one copy of the background would quit the screen, 
+giving the feeling your character is moving across the scenery. I didn't have time to draw really long background, 
+so I decided to cycle the same background with a little trick. Whenever one copy of the background would quit the screen, 
 I would teleport it at the left, so it can be reused again.
   
   ![schema]({filename}/image/GameDev2.png)
   
- It was working well, but looking even better when you add two of them, at different distances!
+
+It was working well, but looking even better when you add two of them, at different distances!
  
  ![parallax finished]({filename}/image/GameDev3.gif)
  
- I spent a lot of time creating the background, but it would not be the most difficult task. The most difficult task was
- to draw animation. Pixel art is really difficult despite its apparent simplicity. However, armed with 
- [Pixel Studio](https://store.steampowered.com/app/1204050/Pixel_Studio_for_pixel_art/)
- (free on Steam), their tutorials, and a few pieces of advice from a [friend](https://twitter.com/Fe_nris) way more skilled
- than me, I was able to produce an animation that made me proud! 
+I spent a lot of time creating the background, but it would not be the most difficult task. The most difficult task was
+to draw animation. Pixel art is really difficult despite its apparent simplicity. However, armed with 
+[Pixel Studio](https://store.steampowered.com/app/1204050/Pixel_Studio_for_pixel_art/)
+(free on Steam), their tutorials, and a few pieces of advice from a [friend](https://twitter.com/Fe_nris) way more skilled
+than me, I was able to produce an animation that made me proud! 
  
 ![Sprites used for animation]({filename}/image/GameDev4.gif)
 
@@ -82,7 +85,7 @@ creations!
 If you have python 3, you can clone [my repo](https://github.com/Elesh-Norn/game-jam-2020) and play the game,
 by following the instructions. 
 
-If you wish to see other participants' creations and take over the theme, go check the 
+If you wish to see other participants' creations and take over the theme, go check the
 [python discord](https://github.com/python-discord/game-jam-2020) repo! If you wish to join the discord, you can find
 their website [here](https://pythondiscord.com/).
  
