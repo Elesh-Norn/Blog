@@ -73,7 +73,7 @@ to draw animation. Pixel art is really difficult despite its apparent simplicity
 than me, I was able to produce an animation that made me proud! 
  
 
-![Sprites used for animation]({filename}/image/GameDev4.gif)
+![Sprites used for animation]({filename}/image/GameDev4.png)
 
 
 ###Endgame
@@ -100,4 +100,4 @@ If you wish to see other participants' creations and take over the theme, go che
 [python discord](https://github.com/python-discord/game-jam-2020) repo! If you wish to join the discord, you can find
 their website [here](https://pythondiscord.com/).
 
-Arcade site is [here](https://arcade.academy/) and the arcade discord [here](https://discord.gg/fceAXdY).
+Arcade site is [here](https://arcade.academy/) and the arcade discord [here](https://discord.gg/ZjGDqMp).
