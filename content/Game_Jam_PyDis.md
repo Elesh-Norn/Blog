@@ -17,9 +17,9 @@ fitting the theme at all! The first thing that came to mind with the theme was
 ["Lost Viking"](https://en.wikipedia.org/wiki/The_Lost_Vikings) an old Blizzard video game, where you control 3 characters,
 with their own power. To be able to progress in the level, you had to use all of the characters. This required some thinking.
 
- 
-![Lost Viking is a game where you control 3 characters](https://main.judgehype.com/images/froala/2019/04/1554232974_6.jpg)
-
+<div style="text-align: center;">
+<img src="https://main.judgehype.com/images/froala/2019/04/1554232974_6.jpg" alt="Lost Viking is a game where you control 3 characters">
+</div>
 Despite being a huge source of possible inspiration, a game like this would require a lot of assets, the ability to create clever levels,
 and more coding than I had time. I decided to reduce the scope as much as possible. After all, a tiny finished game is
 better than a grandiose prototype.
@@ -40,8 +40,10 @@ on 3 different locations! I had my game idea.
 Thanks to arcade simple and efficient API, I was able to do a prototype really quickly. A quick and dirty pixel art later, 
 I had a guy running and jumping, with obstacles coming forward.
 
-![Work of art]({filename}/image/GameDev1.gif)
 
+<div style="text-align: center;">
+<img src="{static}/image/GameDev1.gif" alt="Work of art">
+</div>
 To do this I only needed a couple of methods!
 
 
@@ -57,13 +59,17 @@ so I decided to cycle the same background with a little trick. Whenever one copy
 I would teleport it at the left, so it can be reused again.
  
 
-![schema]({filename}/image/GameDev2.png)
+<div style="text-align: center;">
+<img src="{static}/image/GameDev2.png" alt="schema">
+</div>
   
 
 It was working well with one background, but it's even better two, at different distances!
  
 
-![parallax finished]({filename}/image/GameDev3.gif)
+<div style="text-align: center;">
+<img src="{static}/image/GameDev3.gif" alt="parallax finished">
+</div>
 
 
 ### Pixel art and animation
@@ -74,7 +80,9 @@ to draw animation. Pixel art is really difficult despite its apparent simplicity
 than me, I was able to produce an animation that made me proud!
  
 
-![Sprites used for animation]({filename}/image/GameDev4.png)
+<div style="text-align: center;">
+<img src="{static}/image/GameDev4.png" alt="Sprites used for animation">
+</div>
 
 
 ###Endgame
@@ -85,7 +93,10 @@ input and disable repeated inputs in a short period of time. I then focused on t
 a life system, a high score board, better-looking score and window, and resolving minor bugs. You can see the full game
 in the gif below.
 
-![Full Game Gif]({filename}/image/GameDev5.gif)
+
+<div style="text-align: center;">
+<img src="{static}/image/GameDev5.gif" alt="Full Game Gif">
+</div>
 
 ##Last words and links
 Overall, I really enjoyed this experience. The time and theme constraint surprisingly boost creativity and it was my 
@@ -97,8 +108,25 @@ creations!
 If you have python 3, you can clone [my repo](https://github.com/Elesh-Norn/game-jam-2020) and play the game,
 by following the instructions.
 
+Edit 10/05/2020: I actually won the Gamejam. I am super proud, especially given the quality of other participants submission.
+
+It has been livestreamed on Youtube and you can find the video here. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KkLXMvKfEgs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+My Game has been played at
+[2:06:38](https://youtu.be/KkLXMvKfEgs?t=7598), me speaking a few words akwardly at [02:52:00](https://youtu.be/KkLXMvKfEgs?t=10328), 
+and the big reveal starting at [03:47:14](https://youtu.be/KkLXMvKfEgs?t=13634)
+
 If you wish to see other participants' creations and take over the theme, go check the
 [python discord](https://github.com/python-discord/game-jam-2020) repo! If you wish to join the discord, you can find
 their website [here](https://pythondiscord.com/).
+
+- Gem matcher by [Artemis](https://github.com/python-discord/game-jam-2020/tree/master/Finalists/artemis) is really cool. The UI is responsive and well designed and it have the best tutorial.
+
+- Triple Block by [gamer gang team](https://github.com/python-discord/game-jam-2020/tree/master/Finalists/gamer_gang) is 
+the most professional looking game. I can easily imagine playing this on some browser or phone.
+
+- 3 strings! by [Who's Rem](https://github.com/python-discord/game-jam-2020/tree/master/Participants/Whos_Rem) had the same concept than my game but approached it more rythm based. It's technically impressive and I wish we would have combined our games.
 
 Arcade site is [here](https://arcade.academy/) and the arcade discord [here](https://discord.gg/ZjGDqMp).
