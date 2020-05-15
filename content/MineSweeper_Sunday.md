@@ -35,7 +35,7 @@ print(grid)
 ~~~~
 
 One thing to note is that the 0,0 is the top left corner, unlike of our usual Cartesians references where 0,0 is the bottom left.
-The square left to it would be (0,1) below would be (1,0), etc... I note it y, x, but you can note it row, column if you prefer.
+The square right to it would be (0,1) below would be (1,0), etc... I note it y, x, but you can note it row, column if you prefer.
 
 But maybe in my game, I will want to have different height and weight and store the grid in an object, so I will create a Grid class as such:
 ~~~~
